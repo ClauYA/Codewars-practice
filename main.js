@@ -17,3 +17,17 @@ function positiveSum(arr) {
   }
   return sum;
 }
+
+function findSmallestInt(array)
+{
+  let smallest=array[0]
+  for (let i = 0; i < array.length; i++)
+  {
+    if (array[i] < smallest)
+    {
+      smallest=array[i]
+    }
+  }
+  return smallest;
+}
+console.log(findSmallestInt([3, 5, 2, 8, 1,2,6]))
