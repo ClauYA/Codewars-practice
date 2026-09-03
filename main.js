@@ -31,3 +31,29 @@ function findSmallestInt(array)
   return smallest;
 }
 console.log(findSmallestInt([3, 5, 2, 8, 1,2,6]))
+
+function positiveSum(array) 
+{
+  let sum=0;
+  for(let i=0; i<array.length; i++)
+  {
+    if(array[i]>0)
+    {
+      sum+=array[i];
+    }
+
+  }
+  return sum;
+}
+console.log(positiveSum([1, -4, 7, 12]))
+
+function solution(str){
+  
+  let cadena='';
+  for(let i=str.length-1;i>=0;i--)
+  {
+    cadena+=str[i]
+  }
+  return cadena;
+}
+console.log(solution("world"))
