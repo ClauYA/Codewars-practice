@@ -47,7 +47,7 @@ function positiveSum(array)
 }
 console.log(positiveSum([1, -4, 7, 12]))
 
-function solution(str){
+function reverseString(str){
   
   let cadena='';
   for(let i=str.length-1;i>=0;i--)
@@ -56,4 +56,31 @@ function solution(str){
   }
   return cadena;
 }
-console.log(solution("world"))
+console.log(reverseString("world"))
+
+function solution(str)
+{
+  let arr=[]
+  if(str.length%2===0)
+  { 
+    for(let i=0;i<str.length;i++)
+    {
+      arr.push(`${str[i]}${str[i+1]}`)
+      i++;
+    }
+    return arr;
+  }else{
+    str+='_'
+    if(str.length%2===0)
+    { 
+      for(let i=0;i<str.length;i++)
+      { 
+        arr.push(`${str[i]}${str[i+1]}`)
+        i++;
+      }
+      
+    return arr;
+    }
+  }
+}
+console.log(solution('caden'))
