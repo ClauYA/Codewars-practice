@@ -57,7 +57,7 @@ function reverseString(str){
   return cadena;
 }
 console.log(reverseString("world"))
-
+//split string
 function solution(str)
 {
   let arr=[]
