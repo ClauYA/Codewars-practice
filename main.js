@@ -136,3 +136,12 @@ function getPlanetName(id){
   return name;
 }
 console.log(getPlanetName(1))
+
+//String to an array
+function stringToArray(string)
+{
+
+  const array=string.split(" ")
+  return array
+}
+console.log(stringToArray("hola como estas"))
