@@ -156,5 +156,64 @@ function greet(name)
     
   return "Hello, " + name + "!";
   }
-    
 }
+
+
+function evenOrOdd(number)
+{
+  if(number%2==0){
+    return "even"
+  }else{
+    return "odd"
+  }
+}
+console.log(evenOrOdd(5))
+
+//Write a function that accepts fight string consists of only small letters and return who wins the fight. 
+// When the left side wins return Left side wins!, when the right side wins return Right side wins!, in other case return Let's fight again!.
+
+function alphabetWar(fight)
+{
+  let sumLeft=0
+  let sumRight=0
+  for(let i=0;i<fight.length;i++)
+  {
+    switch(fight[i])
+    {
+        case 'w':
+          sumLeft+=4;
+          break;
+        case 'p':
+          sumLeft+=3;
+          break;
+        case 'b':
+          sumLeft+=2;
+          break; 
+        case 's':
+          sumLeft+=1;
+          break; 
+        case 'm':
+          sumRight+=4;
+          break;
+        case 'q':
+          sumRight+=3;
+          break;
+        case 'd':
+          sumRight+=2;
+          break; 
+        case 'z':
+          sumRight+=1;
+          break; 
+    }
+  }
+  if(sumLeft>sumRight)
+  {
+    console.log('Left side wins!')
+  }else if(sumLeft<sumRight){
+    console.log('Right side wins!')
+  }else if(sumLeft===sumRight){
+    console.log("Let's fight again!")
+  }
+
+}
+alphabetWar('zdqmwpbs')
