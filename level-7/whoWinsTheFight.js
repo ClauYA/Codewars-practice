@@ -39,7 +39,6 @@ function alphabetWar(fight)
     }
    
   }
-  console.log('Antes de comparar:', sumLeft, sumRight);
   if(sumLeft>sumRight)
   {
     return 'Left side wins!'
@@ -51,4 +50,47 @@ function alphabetWar(fight)
 
 }
 console.log(alphabetWar('zbb'))
-//alphabetWar('wwwwww')
+//highAndLow("1 2 3 4 5"); // return "5 1"
+//highAndLow("1 2 -3 4 5"); // return "5 -3"
+//highAndLow("1 9 3 4 -5"); // return "9 -5"
+function highAndLow(numbers)
+{
+  let b=[]
+  let arr=numbers.split(" ")
+  b = arr.sort();
+  console.log(b)
+  numbers=`${b[b.length-1]} ${b[0]}`
+  return numbers
+}
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+
+
+
+
+
+
+//level 5 by mistake
+//Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
+//url = "http://github.com/carbonfive/raygun" -> domain name = "github"
+//function domainName(url)
+//{
+//  let nombreI=url.indexOf('/')
+//  let nombreF=url.indexOf('.')
+//  console.log('indexof ini')
+//  console.log(nombreI)
+//  console.log('indexof fin')
+//  console.log(nombreF)
+//  let pal;
+//  if(url[nombreI]==='/')
+//  {
+//    pal= url.slice(nombreI+1,nombreF)
+//  }
+ 
+//  let n;
+//  for(let i=url[nombreI];i<url[nombreF];i++)
+ // {
+ //     n+=url[i]
+ // }
+//  console.log(n)
+///}
+//domainName("http:google.com")
