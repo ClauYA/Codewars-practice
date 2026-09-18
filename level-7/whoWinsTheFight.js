@@ -69,6 +69,9 @@ console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
 
 
 
+
+
+
 //level 5 by mistake
 //Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
 //url = "http://github.com/carbonfive/raygun" -> domain name = "github"
