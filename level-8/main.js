@@ -180,3 +180,15 @@ function cockroachSpeed(km)
   return Math.floor(result)
 }
 cockroachSpeed(1.08)
+
+function well(x) {
+    const goodCount = x.filter(idea => idea === 'good').length;
+    
+    if (goodCount === 0) {
+        return 'Fail!';
+    } else if (goodCount <= 2) {
+        return 'Publish!';
+    } else {
+        return 'I smell a series!';
+    }
+}
