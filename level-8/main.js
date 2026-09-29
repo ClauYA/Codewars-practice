@@ -192,3 +192,11 @@ function well(x) {
         return 'I smell a series!';
     }
 }
+//sum of elements from an array
+function sum (numbers) {
+  let acc=0;
+  for(let i=0;i<numbers.length;i++){
+    acc+=numbers[i]
+  }
+  return acc
+}
