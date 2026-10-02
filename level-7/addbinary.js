@@ -1,7 +1,7 @@
 function addBinary(a,b) 
 {
-    const sum=a+b;
-   if (sum < 256) {
+  const sum=a+b;
+  if (sum < 256) {
     return Math.abs(sum).toString(2);
   }
   return 0;
