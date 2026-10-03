@@ -12,7 +12,7 @@ function decodePass( passArr, bin ){
    console.log(String.fromCharCode(binary));
    palabra+=String.fromCharCode(binary); 
   })
-   if(passArr.includes(palabra)){ return palabra}else{  return false}
+  if(passArr.includes(palabra)){ return palabra}else{  return false}
     
  
 }
