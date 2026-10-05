@@ -200,3 +200,13 @@ function sum (numbers) {
   }
   return acc
 }
+//is it palindrome?
+function isPalindrome(x) {
+ let reversesPalabra=x.split("").reverse().join("").toLowerCase();
+  console.log("palindromeeeeeeeee")
+  console.log(reversesPalabra)
+  return x.toLowerCase() === reversesPalabra ? true : false;
+   
+}
+
+console.log(isPalindrome('leon noel'))
