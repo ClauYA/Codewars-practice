@@ -1,3 +1,4 @@
+//PREP
 // input a integer n 
 //is it going to be bigger than 0?
 // is it always an integer? what about if there is empty or string?
