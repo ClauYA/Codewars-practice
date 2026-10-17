@@ -20,14 +20,7 @@ function replaceCommon(string, letter) {
     console.log(obj)
     let max = Math.max(...Object.values(obj))  
     const clave = Object.keys(obj).find(key => obj[key] === max);
-    const indice = Object.keys(obj).findIndex(key => obj[key] === max);
-    console.log(`max ${max}`)
-    console.log(indice)
-    console.log(clave)
-    console.log(max)
-    let nuevo=''
-    nuevo=string.replaceAll(clave,letter)
-    console.log(nuevo)
-    
+    let nuevo=string.replaceAll(clave,letter)
+    return nuevo;
 }
  replaceCommon('my o loves me as never did', 't')
